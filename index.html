@@ -1,1 +1,331 @@
 
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("body.png");
+        min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">IN2CHIRO</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
+                <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-newspaper-o"></i> NEWS</a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-left w3-text-white" style="padding:48px">
+            <span class="w3-jumbo w3-hide-small">Welcome to IN2CHIRO</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome to IN2CHIRO</span><br>
+            <span class="w3-large">We are a team of two chiropractors here to fix and adjust your wellbeing.</span>
+            <h6>Source of photo: Medical News Today (2018) Chiropractic techniques can harm vision, a new case study illustrates. https://www.medicalnewstoday.com/articles/323237.php   </h6>
+            <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn More About Us</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">ABOUT THE COMPANY</h3>
+        <p class="w3-center w3-large">Key features of our company</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Responsive</p>
+                <p>We try to respond to our customers as quick as possible as we know time is valuable!</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p>Our Chiropractors have years of practice and are very passionate about their career, so we can assure you the best quality of treatment!</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Studies</p>
+                <p>Both Chiropractors have graduated from RMIT University Bundoora with a Masters degree and have travelled around Australia performing on athletes and various people.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Support</p>
+                <p>Questions? No worries! Ask us anything that you're interested about and we will answer you as best as we can!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>Why Choose US?</h3>
+                <p>
+                    There are times when your body is sore and needs an adjustment at IN2CHIRO, we can help. Whether it is neck pain, back pain, headaches or muscle soreness, you don't need to worry
+                    Luckily, chiropractors at IN2CHIRO have an abundance knowledge about your whole body, thus they can fix you right up!
+                    At IN2CHIRO, Chiropractic care is about giving you full entitlement to your body so you can appreciate a healthy life
+                    Giving IN2CHIRO a visit may be the solution to finding comfort, mobility and freedom.
+                </p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Book Now!</a></p>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="Anthony.png" alt="Buildings" width="700" height="394">
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding:128px 16px" id="team">
+        <h3 class="w3-center">THE TEAM</h3>
+        <p class="w3-center w3-large">The ones who runs this Clinic</p>
+        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="kevin1.png" alt="Kevin" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Dr Kevin Ho</h3>
+                        <p class="w3-opacity">Chiropracto Specialist</p>
+                        <p>Dr Kevin Ho graduate from RMIT university at Bundoora with a Masters of Chiropractic. During his studies Kevin has completed multiple programs in Melbourne giving chiropractic care to people in need. Kevin also spent time in Spain to learn different techniques.</p>
+                        <p>Kevin comes from a swimming background and therefore has a huge interest treating swimmers with their injuries and giving chiropractic care to maximise their performance. Kevin has a large variety of techniques and will give chiropractic care to people of all ages</p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="Jordan.png" alt="Jordan" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Dr Jordan Le</h3>
+                        <p class="w3-opacity">Chiropractor Specialist</p>
+                        <p>
+                            Dr Jordan Le is a RMIT graduate in 1999 with a triple degree with over 17 years of Chiropractic experience, he has studied numerous hours perfecting many techniques. Jordan has been working in Adelaide before returning to Melbourne. Jordan has strong focus in improving health of the community through enhancing the spinal health.</p>
+                            <p>Jordan enjoys working with AFL athletes and other patients with an interest in sport.  Jordan also has a Bachelor of Sport Science, thus has good knowledge in movement of the body with sports
+                        </p>
+                        <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+                    </div>
+                </div>
+            </div>
+         >
+                </div>
+            </div>
+           
+   
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">10+ years</span>
+            <br>Studies
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">200+</span>
+            <br>Adjustments Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">200+</span>
+            <br>Happy Clients
+        </div>
+        
+  
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h2 class="w3-center">Services and Treatments Offered</h2> 
+        <h3 class="w3-center w3-large">What we've done for people</h3>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <h3>Gonstead - this is a hands on technique that involves adjusting the lower body</h3>
+            <h3>Activator - a handheld instrument which offers a gentle impulse into segments of the vertebrae, this is used to treat most things such chronic back pain, headaches and muscle soreness</">
+            <h3>Thompson / drop table - this technique involves a table which is specially made with padded cushions created to drop when the chiropractor applies a thrust to make an adjustment. This technique is mostly used for back and neck adjustments </h3>
+        </div>
+
+     
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    
+
+    <!-- Pricing Section -->
+    <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+        <i class="fa fa-newspaper-o fa-3x"></i> <h3>Latest News</h3>
+            <p class="w3-large">News.</p>
+            <div class="w3-row-padding" style="margin-top:64px">
+                <div class="w3-third w3-section">
+                    <ul class="w3-ul w3-white w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">News</li>
+                        <li class="w3-padding-16"><b>One of the highest leading reasons for a chiropractic visit has shown to be reoccurring low back pain and because of this, an article has been formed studying a randomised controlled trial assessing the effects of chiropractic manipulative therapy on patients with low back pain. 'Adding Chiropractic Manipulative Therapy to Standard Medical Care for Patients With Acute Low Back Pain' (Goertz C.M., Long C.R., Hondras M.A., Petri R., Delgado R., Lawrence D.J., Owens E.F. & Meeker W.C., 2013) studies the changes in levels of pain within patients while undergoing treatment given by chiropractors known as manipulative therapy. Patients included within the trial were mainly consisting of men and women in the military aged between 18 and 35 but the article still emphasises the benefits of spinal manipulation on patients with low back pain</b></li>
+
+
+
+                        <li class="w3-light-grey w3-padding-24">
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-third">
+                    <ul class="w3-ul w3-white w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-48">News</li>
+                        <li class="w3-padding-16">
+                            <b>Being a randomised controlled trial, it consisted of 91 patients who were separated into two different groups, both undergoing standard medical care (SMC), while one group being treated with chiropractic manipulative therapy (CMT) on top of their standard medical care treatment. (Goertz C.M. & et al) During week 2 of the trial, 28 and 39 patients of the SMC and SMC + CMT group respectively, were analysed for follow ups and treatment allocation. The final analysis included 29 patients from the SMC group and 40 patients from the SMC + CMT group which included evaluating a numerical scale of back pain after the 4 weeks of treatment using the back pain functional scale (BPFS) (Goertz C.M. & et al). </b>
+
+                            <span class="w3-opacity"></span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-third w3-section">
+                    <ul class="w3-ul w3-white w3-hover-shadow">
+                        <li class="w3-black w3-xlarge w3-padding-32">News</li>
+                        <li class="w3-padding-16">
+                            <b>
+                                The article includes a scale where patients were reviewed on how much treatment has helped their chronic back pains. Scaling from 1 -7 where 1 indicates that the pain is completely gone, and 7 being much worse. Figure 2 shows a significant change in pain due to manipulative therapy where approximately 35% of patients rated on the scale, 2, meaning 'much better', approximately 2.5% rate 1, approximately 30% rate 3, meaning moderately better (Goetz C.M. & et al).
+                                Limitations of the controlled trial included loss of follow up, leading to disproportionate reviews between the two groups which may have been crucial to show a wider range in terms of difference in pain scale between the groups. Limitations also included not being able to blind the patients to whoever the treating clinician was (Goetz C.M. & et al).Being one of the leading causes of chiropractic visits, it is important for more evidence to be gathered about chiropractic manipulative therapy so that patients with chronic back pain may have a broader sight on which type of treatments are available to them.
+                            </b> Source: https://www.ncbi.nlm.nih.gov/pubmed/23060056
+                        </li>
+
+
+
+
+                        <li class="w3-light-grey w3-padding-24">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+</div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Address: 12 Little Bourke St, Melbourne VIC 3000</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +95 000 </p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: clinic@in2chiro.com.au</p>
+            <p><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i> Opening Hours: Mon - Fri: 8am - 8pm 
+                                                                                     Sat: 8am-6pm
+                                                                                     Sun: Closed
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            
+           
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        
+    </footer>
+
+    <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+    </script>
+
+</body>
+</html>
